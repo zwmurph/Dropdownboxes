@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dropdown boxes</string>
+
+    <!--Use an array to set the options for the spinner-->
+    <!--The order that they appear here is how they are displayed in the spinner-->
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>

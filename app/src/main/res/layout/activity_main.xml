@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.dropdownboxes.MainActivity">
+
+    <!--Use the frame layout to encompass the Spinner-->
+    <!--Set the height to wrap_content as the height of the text is controlled elsewhere-->
+    <!--Use the 'android:background' attribute to set the background-->
+    <FrameLayout
+        android:id="@+id/spinnerBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_spinner">
+
+        <!--Keep the Spinner simple, give it an ID, width & height-->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <!--This TextView is only used to represent the text that is retrieved from the Spinner-->
+    <!--It is not necessarily needed-->
+    <TextView
+        android:id="@+id/spinnerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerBox"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+</RelativeLayout>
+
